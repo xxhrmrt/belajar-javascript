@@ -17,6 +17,6 @@ if (hasilSalesman <= 200000){
 
 let totalKomisi = uangJasa + komisi
 
-console.log(`Hasil Salesman sebesar ${hasilSalesman}`)
-console.log(`Uang Jasa sebesar ${uangJasa} dan Komisi sebesar ${komisi}`)
-console.log(`Selamat anda mendapatkan Total Komisi sebesar ${totalKomisi}`)
+console.log(`Hasil Salesman sebesar Rp.${hasilSalesman}`)
+console.log(`Uang Jasa sebesar Rp.${uangJasa} dan Komisi sebesar Rp.${komisi}`)
+console.log(`Selamat anda mendapatkan Total Komisi sebesar Rp.${totalKomisi}`)
