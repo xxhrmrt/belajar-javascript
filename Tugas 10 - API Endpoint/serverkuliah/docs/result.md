@@ -21,5 +21,5 @@
 ## 7. '/dosen'
 ![Alt text](<Screenshot (10).png>)
 
-## 8. '/dosen' setelah UPDATE pada nip: , DELETE, dan INSERT
+## 8. '/dosen' setelah UPDATE pada nip: 222, DELETE pada nip: 221, dan INSERT pada nip: 223
 ![Alt text](<Screenshot (12).png>)
