@@ -1,0 +1,100 @@
+### 
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username" : "somantri",
+  "password" : "rahasia",
+  "name" : "Satria Harimurti"
+}
+
+### Log In User
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username" : "somantri",
+  "password" : "rahasia"
+}
+
+### Get User
+
+GET http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 344cedc3-1472-4f69-bc00-6ae8eaa8535e
+
+### Update User
+
+PATCH http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 344cedc3-1472-4f69-bc00-6ae8eaa8535e
+
+{
+  "name" : "Kani Daffa"
+}
+
+### Delete User
+
+DELETE http://localhost:3000/api/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: 344cedc3-1472-4f69-bc00-6ae8eaa8535e
+
+### Create Song
+
+POST http://localhost:3000/api/songs
+Content-Type: application/json
+Accept: application/json
+Authorization: 789e640d-4e96-4b27-93a2-f2e8768db5e8
+
+{
+  "title": "Love Epiphany",
+  "singer": "Reality Club",
+  "album": "Reality Club Present...",
+  "year": "2023",
+  "label": "Dominion Records",
+  "songwriter": "Faiz Novascotia Saripudin"
+}
+
+### List
+
+GET http://localhost:3000/api/songs
+Content-Type: application/json
+Accept: application/json
+Authorization: 789e640d-4e96-4b27-93a2-f2e8768db5e8
+
+### Get
+
+GET http://localhost:3000/api/songs/693
+Content-Type: application/json
+Accept: application/json
+Authorization: 789e640d-4e96-4b27-93a2-f2e8768db5e8
+
+### Update
+
+PUT http://localhost:3000/api/songs/692
+Content-Type: application/json
+Accept: application/json
+Authorization: 789e640d-4e96-4b27-93a2-f2e8768db5e8
+
+{
+  "title": "Seperti yang dulu",
+  "singer": "Ungu",
+  "album": "The Best of...",
+  "year": "2010",
+  "label": "Triniti",
+  "songwriter": "Pasya"
+}
+### Delete 
+
+DELETE http://localhost:3000/api/songs/692
+Content-Type: application/json
+Accept: application/json
+Authorization: 789e640d-4e96-4b27-93a2-f2e8768db5e8
+
