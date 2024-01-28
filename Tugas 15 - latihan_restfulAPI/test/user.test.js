@@ -164,13 +164,13 @@ describe("PATCH /api/users/current", function () {
       .patch("/api/users/current")
       .set("Authorization", "test")
       .send({
-        name: "Eko",
+        name: "Satria",
         password: "rahasialagi",
       });
 
     expect(result.status).toBe(200);
     expect(result.body.data.username).toBe("test");
-    expect(result.body.data.name).toBe("Eko");
+    expect(result.body.data.name).toBe("Satria");
 
     const user = await getTestUser();
     expect(await bcrypt.compare("rahasialagi", user.password)).toBe(true);
@@ -181,12 +181,12 @@ describe("PATCH /api/users/current", function () {
       .patch("/api/users/current")
       .set("Authorization", "test")
       .send({
-        name: "Eko",
+        name: "Satria",
       });
 
     expect(result.status).toBe(200);
     expect(result.body.data.username).toBe("test");
-    expect(result.body.data.name).toBe("Eko");
+    expect(result.body.data.name).toBe("Satria");
   });
 
   it("should can update user password", async () => {
